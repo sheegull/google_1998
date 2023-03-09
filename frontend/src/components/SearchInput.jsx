@@ -17,11 +17,11 @@ const SearchInput = () => {
   return (
     <div
       id="searchBox"
-      className="h-[23px] w-[250px] flex items-center gap-3 px-3 border border-[#9A9A9A] bg-white hover:bg-white"
+      className="h-[23px] w-[250px] flex items-center gap-3 px-1 border border-[#9A9A9A] bg-white hover:bg-white"
     >
       <input
         type="text"
-        className="grow h-[18px] items-center outline-0 text-black/[0.87]"
+        className="grow h-[20px] text-[13px] items-center outline-0 text-black/[0.87] font-serif"
         onChange={(e) => setSearchQuery(e.target.value)}
         onCompositionStart={() => {
           setComposing(true);
