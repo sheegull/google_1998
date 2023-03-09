@@ -8,8 +8,8 @@ import Logo from "../assets/google_1998_logo.png";
 
 const Home = () => {
   return (
-    <div className="h-[100vh] flex flex-col">
-      <HomeHeader />
+    <div className="h-[100vh] flex flex-col font-serif">
+      {/* <HomeHeader /> */}
       <main className="grow flex flex-col justify-center">
         <div className="w-full flex flex-col items-center absolute top-[150px]">
           <img src={Logo} alt="google-logo" className="w-[172px] md:w-[272px] mb-2" />
@@ -61,7 +61,7 @@ const Home = () => {
           </div>
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
