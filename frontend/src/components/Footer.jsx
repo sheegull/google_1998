@@ -3,31 +3,35 @@ import { quickLinks, settingMenu } from "../utils/Constants";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#f2f2f2]">
-      <div className="flex py-[15px] px-[15px] md:px-[30px] border-b border-[#dadce0]">
-        <span className="text-[#70757a] text-[15px] leading-none">Japan</span>
+    <footer className="bg-white border-t-2">
+      <div className="hidden md:flex pt-[5px] px-[15px] justify-center items-center">
+        <div className=" text-[12px] flex gap-1">
+          <span className="text-[#35373B]">Try your query on:</span>
+          <ul className="text-[#2914E8] underline flex gap-1">
+            <li>AltaVista</li>
+            <li>Excite</li>
+            <li>HotBot</li>
+            <li>Infoseek</li>
+            <li>Lycos</li>
+            <li>Deja</li>
+            <li>Yahoo!</li>
+            <li>Amazon</li>
+            <li>Open</li>
+            <li>Directory</li>
+            <li>eGroups</li>
+          </ul>
+        </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between py-3 md:py-0 md:px-[15px] border-b border-[#dadce0]">
-        <div className="flex justify-center">
-          {quickLinks.map((item, idx) => (
-            <span
-              key={idx}
-              className="text-[#70757a] text-[12px] md:text-[14px] leading-none p-[10px] md:p-[15px]"
-            >
-              {item}
-            </span>
-          ))}
-        </div>
-        <div className="flex justify-center">
-          {settingMenu.map((item, idx) => (
-            <span
-              key={idx}
-              className="text-[#70757a] text-[12px] md:text-[14px] leading-none p-[10px] md:p-[15px]"
-            >
-              {item}
-            </span>
-          ))}
+      <div className="flex justify-center py-3 md:pb-5 md:px-[15px]">
+        <div className="flex gap-2">
+          Copyright @1998 Google Inc.
+          <div className=" flex gap-1">
+            <span>-</span>
+            <span className="text-[#2914E8] underline">About</span>
+            <span>-</span>
+            <span className="text-[#2914E8] underline">Help</span>
+          </div>
         </div>
       </div>
     </footer>
