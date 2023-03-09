@@ -4,23 +4,26 @@ import HomeHeader from "./HomeHeader";
 import SearchInput from "./SearchInput";
 import Footer from "./Footer";
 
-import Logo from "../assets/google-logo.png";
+import Logo from "../assets/google_1998_logo.png";
 
 const Home = () => {
   return (
     <div className="h-[100vh] flex flex-col">
       <HomeHeader />
-      <main className="grow flex flex-col justify-center items-center">
-        <div className="w-full px-5 flex flex-col items-center pb-20">
-          <img src={Logo} alt="google-logo" className="w-[172px] md:w-[272px] mb-6" />
-          <SearchInput />
-          <div className="flex gap-2 text-[#3c4043] mt-8">
-            <button className="h-9 px-4 bg-[#f8f9fa] text-sm rounded-md border border-[#f8f9fa] hover:border-[#dadce0] hover:shadow-c2">
-              Google Search
-            </button>
-            <button className="h-9 px-4 bg-[#f8f9fa] text-sm rounded-md border border-[#f8f9fa] hover:border-[#dadce0] hover:shadow-c2">
-              I'm Feeling Lucky
-            </button>
+      <main className="grow flex flex-col justify-center">
+        <div className="w-full px-5 flex flex-col items-center pb-20 absolute top-[150px]">
+          <img src={Logo} alt="google-logo" className="w-[172px] md:w-[272px] mb-2" />
+          <div className="w-[600px] flex flex-col justify-center items-center bg-[#EAEAEA] pt-[2px] pb-4">
+            <p className="text-[13px] text-[#21171E]">Search the web using Google!</p>
+            <SearchInput />
+            <div className="flex gap-[5px] text-[#21171E] mt-[3px]">
+              <button className="h-5 px-2 flex items-center  bg-[#DADADA] text-[13px] border border-[#AFAFAF]">
+                Google Search
+              </button>
+              <button className="h-5 px-2 flex items-center  bg-[#DADADA] text-[13px] border border-[#AFAFAF]">
+                I'm Feeling Lucky
+              </button>
+            </div>
           </div>
         </div>
       </main>
