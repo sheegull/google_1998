@@ -8,11 +8,11 @@ import Logo from "../assets/google_1998_logo.png";
 
 const Home = () => {
   return (
-    <div className="h-[100vh] flex flex-col font-serif">
+    <div className="h-[80vh] flex flex-col font-serif">
       {/* <HomeHeader /> */}
       <main className="grow flex flex-col justify-center">
-        <div className="w-full flex flex-col items-center absolute top-[150px]">
-          <img src={Logo} alt="google-logo" className="w-[172px] md:w-[272px] mb-2" />
+        <div className="w-full flex flex-col items-center">
+          <img src={Logo} alt="google-logo" className="w-[272px] mb-2" />
           <div className="w-[600px] flex flex-col justify-center items-center bg-[#EAEAEA] pt-[2px] pb-4">
             <p className="text-[13px] text-[#21171E]">Search the web using Google!</p>
             <SearchInput />
@@ -34,11 +34,11 @@ const Home = () => {
               </ul>
             </div>
             <div className="w-[140px] flex flex-col justify-center items-center text-center bg-[#60C3B5] border-[1px] border-white">
-              <ul>
-                <li className="text-[#2914E8] underline">Help!</li>
-                <li className="text-[#2914E8] underline">About Google!</li>
-                <li className="text-[#2914E8] underline">Company Info</li>
-                <li className="text-[#2914E8] underline">Google! Logos</li>
+              <ul className="text-[#2914E8] underline">
+                <li>Help!</li>
+                <li>About Google!</li>
+                <li>Company Info</li>
+                <li>Google! Logos</li>
               </ul>
             </div>
             <div className="flex flex-col justify-center items-center text-center bg-[#52A59A] flex-1 border-[1px] border-white">
@@ -46,7 +46,8 @@ const Home = () => {
               <p>updates monthly:</p>
               <input
                 type="email"
-                className="grow w-[120px] items-center outline-0 text-black/[0.87]"
+                className="grow w-[120px] items-center outline-0 text-black/[0.87] px-1"
+                placeholder="your email"
               />
               <div className="flex gap-2 m-[1.5px] items-center">
                 <button className="h-5 px-2 flex items-center  bg-[#DADADA] border border-[#AFAFAF]">
