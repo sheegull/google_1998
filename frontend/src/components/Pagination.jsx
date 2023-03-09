@@ -4,7 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { pagination } from "../utils/Constants";
 
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-import Logo from "../assets/google-pagination-logo.png";
+import Logo from "../assets/google_1988_pagination.png";
 
 const Pagination = ({ queries }) => {
   const [page, setPage] = useState(pagination[0].startIndex);
@@ -21,8 +21,8 @@ const Pagination = ({ queries }) => {
   };
 
   return (
-    <div className="flex flex-col items-center py-14 max-w-[700px]">
-      <div className="relative text-[#4285f4]">
+    <div className="flex flex-col justify-center items-center pt-10">
+      <div className="relative text-[#629889] underline">
         {queries.previousPage && (
           <div
             className="absolute left-[-30px] md:left-[-40px] top-[10px]"
@@ -30,7 +30,7 @@ const Pagination = ({ queries }) => {
           >
             <FiChevronLeft size={20} className="cursor-pointer" />
             <span className="cursor-pointer absolute left-[-5px] top-[30px] hidden md:block">
-              Prev
+              Prev page
             </span>
           </div>
         )}
@@ -42,17 +42,18 @@ const Pagination = ({ queries }) => {
           >
             <FiChevronRight size={20} className="cursor-pointer" />
             <span className="cursor-pointer absolute left-[-5px] top-[30px] hidden md:block">
-              Next
+              Next page
             </span>
           </div>
         )}
       </div>
-      <div className="flex gap-3 text-[#4285f4] text-sm">
+      <div className="flex gap-3 text-[#2914E8] text-sm">
+        <p className="text-[#21171E] mr-3">Result Page:</p>
         {pagination.map((p) => (
           <span
             key={p.page}
             onClick={() => paginationClickHandler(p.startIndex)}
-            className={`cursor-pointer ${page === p.startIndex ? "text-black" : ""}`}
+            className={`cursor-pointer ${page === p.startIndex ? "text-red-600" : ""}`}
           >
             {p.page}
           </span>
