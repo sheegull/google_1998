@@ -18,7 +18,6 @@ const SearchInput = () => {
       id="searchBox"
       className="h-[23px] w-[250px] flex items-center gap-3 px-4 border border-[#9A9A9A] bg-white hover:bg-white"
     >
-      {/* h-[46px] w-full md:w-[584px] flex items-center gap-3 px-4 border border-[#dfe1e5] rounded-3xl */}
       <input
         type="text"
         className="grow h-[18px] items-center outline-0 text-black/[0.87]"
