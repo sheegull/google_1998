@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-import { IoMdClose } from "react-icons/io";
-
 const SearchInput = () => {
   const { query } = useParams();
   const [searchQuery, setSearchQuery] = useState(query || "");
+  const [composing, setComposing] = useState(false);
   const navigate = useNavigate();
 
   const searchQueryHandler = (e) => {
+    if (composing) return;
     if (e?.key === "Enter" && searchQuery?.length > 0) {
       navigate(`/${searchQuery}/${1}`);
     }
   };
+
   return (
     <div
       id="searchBox"
@@ -22,8 +23,14 @@ const SearchInput = () => {
         type="text"
         className="grow h-[18px] items-center outline-0 text-black/[0.87]"
         onChange={(e) => setSearchQuery(e.target.value)}
+        onCompositionStart={() => {
+          setComposing(true);
+        }}
+        onCompositionEnd={() => {
+          setComposing(false);
+        }}
         value={searchQuery}
-        onKeyUp={searchQueryHandler}
+        onKeyDown={searchQueryHandler}
         autoFocus
       />
     </div>
