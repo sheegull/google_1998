@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="hidden md:flex pt-[5px] px-[15px] justify-center items-center">
         <div className=" text-[12px] flex gap-1">
           <span className="text-[#35373B]">Try your query on:</span>
-          <ul className="text-[#2914E8] underline flex gap-1">
+          <ul className="text-[#2914E8] underline flex gap-1 cursor-pointer">
             <li>AltaVista</li>
             <li>Excite</li>
             <li>HotBot</li>
@@ -28,9 +28,9 @@ const Footer = () => {
           Copyright @1998 Google Inc.
           <div className=" flex gap-1">
             <span>-</span>
-            <span className="text-[#2914E8] underline">About</span>
+            <span className="text-[#2914E8] underline cursor-pointer">About</span>
             <span>-</span>
-            <span className="text-[#2914E8] underline">Help</span>
+            <span className="text-[#2914E8] underline cursor-pointer">Help</span>
           </div>
         </div>
       </div>

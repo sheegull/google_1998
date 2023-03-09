@@ -59,7 +59,7 @@ const SearchResult = () => {
           <button className="h-5 px-1 md:px-2 flex items-center  bg-[#FCFCFC] text-[11px] border border-[#AFAFAF] rounded-md">
             Google Search
           </button>
-          <p className="text-[#2914E8] underline">Search within results?</p>
+          <p className="text-[#2914E8] underline cursor-pointer">Search within results?</p>
         </div>
       </main>
       <Footer />

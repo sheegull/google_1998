@@ -39,7 +39,9 @@ const SearchResultHeader = () => {
             </button>
           </div>
         </div>
-        <div className="text-[#2914E8] underline relative top-[-20px] hidden md:block">Help</div>
+        <div className="text-[#2914E8] underline relative top-[-20px] hidden md:block cursor-pointer">
+          Help
+        </div>
       </div>
 
       {/* <div className="flex ml-[-12px] mt-3">
