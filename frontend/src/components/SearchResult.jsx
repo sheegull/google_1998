@@ -8,6 +8,7 @@ import SearchedItem from "./SearchedItem";
 import SearchedImageItem from "./SearchedImageItem";
 import Pagination from "./Pagination";
 import Footer from "./Footer";
+import SearchInput from "./SearchInput";
 
 const SearchResult = () => {
   const [result, setResult] = useState();
@@ -53,6 +54,13 @@ const SearchResult = () => {
           </div>
         )}
         <Pagination queries={queries} />
+        <div className="flex mt-5 gap-2 justify-center items-center mb-2">
+          <SearchInput />
+          <button className="h-5 px-1 md:px-2 flex items-center  bg-[#FCFCFC] text-[11px] border border-[#AFAFAF] rounded-md">
+            Google Search
+          </button>
+          <p className="text-[#2914E8] underline">Search within results?</p>
+        </div>
       </main>
       <Footer />
     </div>
