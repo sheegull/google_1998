@@ -33,11 +33,11 @@ const SearchResult = () => {
   if (!result) return;
   const { items, queries, searchInformation } = result;
   return (
-    <div className="flex flex-col min-h-[100vh]">
+    <div className="flex flex-col min-h-[100vh] font-serif text-[12px]">
       <SearchResultHeader />
       <main className="grow p-[12px] pb-0 md:pr-5 md:pl-20">
-        <div className="flex text-sm text-[#70767a] mb-3">
-          {`About ${searchInformation.formattedTotalResults} results in (${searchInformation.formattedSearchTime})`}
+        <div className="flex text-[10px] text-[#70767a] mb-3 justify-center">
+          {`Showing results 1-10 of approximately ${searchInformation.formattedTotalResults} for google. Search took ${searchInformation.formattedSearchTime} seconds.`}
         </div>
         {!imageSearch ? (
           <>
