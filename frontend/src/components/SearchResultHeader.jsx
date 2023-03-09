@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import { menu } from "../utils/Constants";
+// import { menu } from "../utils/Constants";
 import { Context } from "../utils/ContextApi";
 import SearchInput from "./SearchInput";
-import ProfileIcon from "./ProfileIcon";
+// import ProfileIcon from "./ProfileIcon";
 
-import Logo from "../assets/google-logo.png";
+import Logo from "../assets/google_1998_logo.png";
 
 const SearchResultHeader = () => {
   const [selectedMenu, setSelectedMenu] = useState("All");
@@ -16,27 +16,33 @@ const SearchResultHeader = () => {
     return () => setImageSearch(false);
   }, []);
 
-  const clickHandler = (menuItem) => {
-    let isTypeImage = menuItem.name === "Images";
-    setImageSearch(isTypeImage ? true : false);
-    setSelectedMenu(menuItem.name);
-  };
+  // const clickHandler = (menuItem) => {
+  //   let isTypeImage = menuItem.name === "Images";
+  //   setImageSearch(isTypeImage ? true : false);
+  //   setSelectedMenu(menuItem.name);
+  // };
 
   return (
-    <div className="p-[15px] pb-0 md:pr-5 md:pl-20 md:pt-7 border-b border-[#ebebeb] flex md:block flex-col items-center sticky top-0 bg-white">
-      <div className="flex items-center justify-between w-full">
+    <div className="p-[15px] pb-0 md:pr-5 md:pl-20 md:pt-7 border-b border-[#ebebeb] flex md:block flex-col items-center top-0 bg-white">
+      <div className="flex items-center justify-between w-full mb-4">
         <div className="flex items-center grow">
           <Link to="/">
-            <img src={Logo} alt="logo-image" className="hidden md:block w-[92px] mr-10" />
+            <img src={Logo} alt="logo-image" className="hidden md:block w-[150px] mr-10" />
           </Link>
-          <SearchInput from="SearchResult" />
+          <div className="flex justify-center items-center gap-2">
+            <SearchInput from="SearchResult" />
+            <button className="h-5 px-1 md:px-2 flex items-center  bg-[#FCFCFC] text-[11px] border border-[#AFAFAF] rounded-md">
+              Google Search
+            </button>
+            <button className="h-5 px-2 flex items-center  bg-[#FCFCFC] text-[11px] border border-[#AFAFAF] rounded-md">
+              I'm feeling lucky
+            </button>
+          </div>
         </div>
-        <div className="hidden md:block">
-          <ProfileIcon />
-        </div>
+        <div className="text-[#2914E8] underline relative top-[-20px] hidden md:block">Help</div>
       </div>
 
-      <div className="flex ml-[-12px] mt-3">
+      {/* <div className="flex ml-[-12px] mt-3">
         {menu.map((menu, idx) => (
           <span
             key={idx}
@@ -52,7 +58,7 @@ const SearchResultHeader = () => {
             )}
           </span>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };
