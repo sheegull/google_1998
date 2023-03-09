@@ -16,7 +16,7 @@ const SearchInput = () => {
   return (
     <div
       id="searchBox"
-      className="h-[23px] w-[250px] flex items-center gap-3 px-4 border border-[#9A9A9A] bg-white hover:bg-white"
+      className="h-[23px] w-[250px] flex items-center gap-3 px-3 border border-[#9A9A9A] bg-white hover:bg-white"
     >
       <input
         type="text"
