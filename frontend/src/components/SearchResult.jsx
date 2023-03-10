@@ -5,7 +5,6 @@ import SearchResultHeader from "./SearchResultHeader";
 import { Context } from "../utils/ContextApi";
 import { fetchDataFromApi } from "../utils/api";
 import SearchedItem from "./SearchedItem";
-import SearchedImageItem from "./SearchedImageItem";
 import Pagination from "./Pagination";
 import Footer from "./Footer";
 import SearchInput from "./SearchInput";
