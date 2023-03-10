@@ -1,2 +1,3 @@
 # google_1998
-prototype google
+
+I recreated the search engine before Google AdSense was introduced.
