@@ -47,7 +47,7 @@ const Home = () => {
               <input
                 type="email"
                 className="grow w-[120px] items-center outline-0 text-black/[0.87] px-1"
-                placeholder="your email"
+                placeholder="your e-mail"
               />
               <div className="flex gap-2 m-[1.5px] items-center">
                 <button className="h-5 px-2 flex items-center  bg-[#DADADA] border border-[#AFAFAF]">
