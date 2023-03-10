@@ -3,7 +3,6 @@ import { useNavigate, useParams } from "react-router-dom";
 
 import { pagination } from "../utils/Constants";
 
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import Logo from "../assets/google_1988_pagination.png";
 
 const Pagination = ({ queries }) => {
