@@ -31,7 +31,6 @@ const SearchInput = () => {
         }}
         value={searchQuery}
         onKeyDown={searchQueryHandler}
-        autoFocus
       />
     </div>
   );
