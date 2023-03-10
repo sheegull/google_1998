@@ -8,6 +8,7 @@ import SearchedItem from "./SearchedItem";
 import Pagination from "./Pagination";
 import Footer from "./Footer";
 import SearchInput from "./SearchInput";
+import { Page404 } from "./Page404";
 
 const SearchResult = () => {
   const [result, setResult] = useState();
@@ -39,18 +40,14 @@ const SearchResult = () => {
         <div className="flex text-[10px] text-[#70767a] mb-3 justify-center">
           {`Showing results 1-10 of approximately ${searchInformation.formattedTotalResults} for google. Search took ${searchInformation.formattedSearchTime} seconds.`}
         </div>
-        {!imageSearch ? (
+        {items ? (
           <>
             {items?.map((item, idx) => (
               <SearchedItem key={idx} data={item} />
             ))}
           </>
         ) : (
-          <div className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-4">
-            {items?.map((item, idx) => (
-              <SearchedImageItem key={idx} data={item} />
-            ))}
-          </div>
+          <Page404 />
         )}
         <Pagination queries={queries} />
         <div className="flex mt-5 gap-2 justify-center items-center mb-2">
