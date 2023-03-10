@@ -1,15 +1,12 @@
 import React from "react";
 
-import HomeHeader from "./HomeHeader";
 import SearchInput from "./SearchInput";
-import Footer from "./Footer";
 
 import Logo from "../assets/google_1998_logo.png";
 
 const Home = () => {
   return (
     <div className="h-[80vh] flex flex-col font-serif">
-      {/* <HomeHeader /> */}
       <main className="grow flex flex-col justify-center">
         <div className="w-full flex flex-col items-center">
           <img src={Logo} alt="google-logo" className="w-[272px] mb-2" />

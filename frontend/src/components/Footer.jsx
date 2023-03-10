@@ -1,5 +1,4 @@
 import React from "react";
-import { quickLinks, settingMenu } from "../utils/Constants";
 
 const Footer = () => {
   return (
