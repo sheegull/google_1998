@@ -3,14 +3,14 @@ import { useNavigate, useParams } from "react-router-dom";
 
 const SearchInput = () => {
   const { query } = useParams();
-  const [searchQuery, setSearchQuery] = useState(query?.replace("before:2000 ", "") || "");
+  const [searchQuery, setSearchQuery] = useState(query?.replace("before:1999 ", "") || "");
   const [composing, setComposing] = useState(false);
   const navigate = useNavigate();
 
   const searchQueryHandler = (e) => {
     if (composing) return;
     if (e?.key === "Enter" && searchQuery?.length > 0) {
-      navigate(`/before:2000%20${searchQuery}/${1}`, { state: { query: searchQuery } });
+      navigate(`/before:1999%20${searchQuery}/${1}`, { state: { query: searchQuery } });
     }
   };
 
