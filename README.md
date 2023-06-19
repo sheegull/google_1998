@@ -3,6 +3,7 @@
 [MVP Demo](https://google-1998-theta.vercel.app/)
 
 googleの広告が煩わしかったので、広告が導入されていない1998年頃のgoogleを再現してみました。
+
 ※広告は表示されます。
 
 ## 環境
