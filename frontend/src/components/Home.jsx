@@ -13,14 +13,6 @@ const Home = () => {
           <div className="w-[600px] flex flex-col justify-center items-center bg-[#EAEAEA] pt-[2px] pb-4">
             <p className="text-[13px] text-[#21171E]">Search the web using Google!</p>
             <SearchInput />
-            <div className="flex gap-[5px] text-[#21171E] mt-[3px]">
-              <button className="h-5 px-2 flex items-center  bg-[#DADADA] text-[12px] border border-[#AFAFAF]">
-                Google Search
-              </button>
-              <button className="h-5 px-2 flex items-center  bg-[#DADADA] text-[12px] border border-[#AFAFAF]">
-                I'm feeling lucky
-              </button>
-            </div>
           </div>
           <div className="w-[602px] h-[75px] flex flex-row leading-4 text-[11px]">
             <div className="w-[215px] flex flex-col justify-center items-center text-center bg-[#6FE1D1] border-[1px] border-white">
@@ -59,7 +51,6 @@ const Home = () => {
           </div>
         </div>
       </main>
-      {/* <Footer /> */}
     </div>
   );
 };
