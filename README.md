@@ -9,8 +9,8 @@ googleの広告が煩わしかったので、広告が導入されていない�
 node.js v16.20.0
 npm 9.6.6
 react 18.2.0
-vite 3.2.7
-tailwindcss 3.2.
+vite 4.1.0
+tailwindcss 3.2.7
 
 googleapi
 ```
