@@ -10,7 +10,7 @@ node.js v16.20.0
 npm 9.6.6
 react 18.2.0
 vite 3.2.7
-tailwindcss 3.2.4
+tailwindcss 3.2.
 
 googleapi
 ```
